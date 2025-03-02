@@ -7,7 +7,7 @@ from utils.apis import  APIS
 
 @pytest.fixture(scope="module")
 def apis():
-    return APIS() #created object for APIS class this is how we create object for class
+    return APIS() #created object for APIS class this is how we create object for class through this we can access methods of common files
 
 def test_get_user_validation(apis): # use apis object here
     response = apis.get("users") # so we pass end point here and thruogh apis object call method get
