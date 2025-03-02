@@ -12,7 +12,7 @@ def apis():
 def test_get_user_validation(apis): # use apis object here
     response = apis.get("users") # so we pass end point here and thruogh apis object call method get
     print(response.json())
-    assert response.status_code == 200
+    assert response.status_code == 200 # here we are doing assertions
     assert len(response.json()) > 0
 
 def test_create_user_validation(apis,load_user_data): # use apis object here
