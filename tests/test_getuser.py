@@ -48,7 +48,7 @@ def test_update_user_validation(apis): # use apis object here
     assert response.json()["name"] == "sameer nalawade"
 
 def test_delete_user_validation(apis): # use apis object here
-
+    #this is for delete
     response = apis.delete("users/1") # so we pass end point here and thruogh apis object call method get
     print(response.json())
     assert response.status_code == 200 #here we only updating so will get 200 ok code
